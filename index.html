@@ -27,7 +27,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-600">
                 <div class="flex items-center justify-between">
-                    <div><p class="text-slate-600 text-sm font-medium uppercase">Total de Atendimentos</p><p class="text-3xl font-bold text-slate-900 mt-2">168</p></div>
+                    <div><p class="text-slate-600 text-sm font-medium uppercase">Total de Atendimentos</p><p class="text-3xl font-bold text-slate-900 mt-2">136</p></div>
                     <div class="bg-blue-100 p-4 rounded-full"><i data-lucide="bar-chart-3" class="w-8 h-8 text-blue-600"></i></div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
             </div>
             <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-yellow-500">
                 <div class="flex items-center justify-between">
-                    <div><p class="text-slate-600 text-sm font-medium uppercase">Atendimentos / Base</p><p class="text-3xl font-bold text-slate-900 mt-2">0,09%</p></div>
+                    <div><p class="text-slate-600 text-sm font-medium uppercase">Atendimentos / Base</p><p class="text-3xl font-bold text-slate-900 mt-2">0,08%</p></div>
                     <div class="bg-yellow-100 p-4 rounded-full"><i data-lucide="trending-up" class="w-8 h-8 text-yellow-600"></i></div>
                 </div>
             </div>
@@ -87,11 +87,11 @@
 
     <script>
         // Dados de Julho 2026
-        const ieData = [{name:"PUCRS ONLINE",value:78},{name:"FAAP ONLINE",value:38},{name:"FIA ONLINE",value:29},{name:"SÍRIO-LIBANÊS DIGITAL",value:9},{name:"IMPACTA DIGITAL",value:8},{name:"PUC-SP DIGITAL",value:4},{name:"UNESC DIGITAL",value:2}];
+        const ieData = [{name:"PUCRS ONLINE",value:78},{name:"FAAP ONLINE",value:29},{name:"FIA ONLINE",value:16},{name:"IMPACTA DIGITAL",value:8},{name:"SÍRIO-LIBANÊS DIGITAL",value:3},{name:"UNESC DIGITAL",value:2},{name:"PUC-SP DIGITAL",value:0}];
         const segmentoData = [{name:"RA",value:98,color:"#1e3a8a"},{name:"PROCON",value:19,color:"#fbbf24"},{name:"Ouvidoria",value:19,color:"#60a5fa"},{name:"Chat Bot",value:26,color:"#10b981"},{name:"Reclame Aqui PS",value:6,color:"#ef4444"}];
         const totalSegmentado = 168;
-        const historicoMensal = [{mes:"jan/26",total:166,base:134964,percentual:0.12},{mes:"fev/26",total:182,base:144244,percentual:0.13},{mes:"mar/26",total:170,base:151440,percentual:0.11},{mes:"abr/26",total:146,base:156615,percentual:0.09},{mes:"mai/26",total:134,base:162397,percentual:0.08},{mes:"jun/26",total:135,base:164717,percentual:0.08},{mes:"jul/26",total:162,base:170497,percentual:0.10},{mes:"ago/26",total:168,base:178599,percentual:0.09}];
-        const historicoIE = [{mes:"jan/26",data:[121,20,14,3,3,0,5]},{mes:"fev/26",data:[136,12,15,7,4,3,5]},{mes:"mar/26",data:[102,24,23,10,6,1,4]},{mes:"abr/26",data:[95,18,9,4,9,0,11]},{mes:"mai/26",data:[80,17,18,8,4,2,5]},{mes:"jun/26",data:[73,23,20,9,3,1,6]},{mes:"jul/26",data:[104,25,15,9,7,2,0]},{mes:"ago/26",data:[78,38,29,8,9,2,4]}];
+        const historicoMensal = [{mes:"jan/26",total:166,base:134964,percentual:0.12},{mes:"fev/26",total:182,base:144244,percentual:0.13},{mes:"mar/26",total:170,base:151440,percentual:0.11},{mes:"abr/26",total:146,base:156615,percentual:0.09},{mes:"mai/26",total:134,base:162397,percentual:0.08},{mes:"jun/26",total:135,base:164717,percentual:0.08},{mes:"jul/26",total:162,base:170497,percentual:0.10},{mes:"ago/26",total:136,base:178599,percentual:0.08}];
+        const historicoIE = [{mes:"jan/26",data:[121,20,14,3,3,0,5]},{mes:"fev/26",data:[136,12,15,7,4,3,5]},{mes:"mar/26",data:[102,24,23,10,6,1,4]},{mes:"abr/26",data:[95,18,9,4,9,0,11]},{mes:"mai/26",data:[80,17,18,8,4,2,5]},{mes:"jun/26",data:[73,23,20,9,3,1,6]},{mes:"jul/26",data:[104,25,15,9,7,2,0]},{mes:"ago/26",data:[78,29,16,8,3,2,0]}];
         const ieCardsData = [
 {name:"PUCRS ONLINE",logo:"https://bucket-vitrine-wl-prod.edtech.com.br/assets-headless/Logo_Icon_0bd832db2a_4f8bfdd079.svg",motivations:"<b>Principais origens:</b> Cobranças (20), Retenção (12), IE (7).<br><b>Principais motivos:</b> Cancelamento (15), Financeiro (14), Documentos (10).<br><b>Principais micro motivos:</b> Critérios e taxas (21), Certificado (8), Falta de retorno (6).",stats:{ra:64,ouv:4,pro:10},insight:"Maior concentração de casos no mês, com 78 atendimentos."},
 {name:"FAAP ONLINE",logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQp6eFbWK4LH6au52iHgm_VpLwDTjZKLz0Sg&s",motivations:"<b>Principais origens:</b> Relacionamento (11), Retenção (7), Conteúdos (4).<br><b>Principais motivos:</b> Cancelamento (11), Documentos (4), Tutoria (4).<br><b>Principais micro motivos:</b> Critérios e taxas (11), Demora/falta de retorno da tutoria (3), Conteúdos desatualizados (3).",stats:{ra:17,ouv:4,pro:8,bot:9},insight:"Segunda maior concentração, com 38 atendimentos."},
@@ -109,7 +109,7 @@
         ieData.forEach(item => { 
             ieTotalTable.innerHTML += `<tr class="border-b border-slate-100 hover:bg-slate-50"><td class="px-6 py-3 text-sm text-slate-900">${item.name}</td><td class="px-6 py-3 text-sm text-slate-900 text-right font-medium">${item.value.toLocaleString('pt-BR')}</td></tr>`; 
         });
-        ieTotalTable.innerHTML += `<tr class="bg-blue-50 border-t-2 border-blue-200"><td class="px-6 py-3 text-sm font-bold text-slate-900">CONSOLIDADO</td><td class="px-6 py-3 text-sm font-bold text-slate-900 text-right">168</td></tr>`;
+        ieTotalTable.innerHTML += `<tr class="bg-blue-50 border-t-2 border-blue-200"><td class="px-6 py-3 text-sm font-bold text-slate-900">CONSOLIDADO</td><td class="px-6 py-3 text-sm font-bold text-slate-900 text-right">136</td></tr>`;
 
         // Legenda do Gráfico de Segmento
         const segmentoLegend = document.getElementById('segmentoLegend');
@@ -141,7 +141,7 @@
             yaxis: [
                 { title: { text: 'Atendimentos' }, labels: { formatter: (v) => v.toLocaleString('pt-BR') } }, 
                 { opposite: true, labels: { formatter: (v) => v.toFixed(2) + '%' } }, 
-                { opposite: true, labels: { formatter: (v) => (v/1000).toFixed(0) + 'k' }, min: 130000, max: 175000 }
+                { opposite: true, labels: { formatter: (v) => (v/1000).toFixed(0) + 'k' }, min: 130000, max: 200000 }
             ], 
             tooltip: { shared: true, intersect: false, y: { formatter: function (y, { seriesIndex }) { if(seriesIndex === 1) return y.toFixed(2) + '%'; if(seriesIndex === 2) return y.toLocaleString('pt-BR'); return y.toLocaleString('pt-BR'); } } }, 
             legend: { position: 'bottom' }
@@ -181,10 +181,10 @@
 
         // Análise Executiva
         const analysis = [
-            { icon: 'trending-up', color: 'green', title: 'RECUPERAÇÃO DO VOLUME', text: 'O volume de Canais Especiais chegou a 168 atendimentos em agosto, alta de 3,7% sobre julho (162), acompanhando a expansão da base ativa.' },
-            { icon: 'activity', color: 'blue', title: 'TAXA CONTROLADA', text: 'A relação entre atendimentos e base de ativos ficou em 0,09%, mantendo baixa pressão relativa sobre a operação.' },
-            { icon: 'users', color: 'purple', title: 'PUCRS CONCENTRA A DEMANDA', text: 'A PUCRS Online respondeu por 46,4% do total de casos, seguida por FAAP Online com 22,6%.' },
-            { icon: 'message-circle', color: 'red', title: 'DISTRIBUIÇÃO MULTICANAL', text: 'Reclame Aqui permanece como a principal origem agregada, mas o mês também registra demanda relevante em Ouvidoria, PROCON e Chat Bot.' }
+            { icon: 'trending-up', color: 'green', title: 'RECALIBRAÇÃO DO VOLUME', text: 'Excluindo Chat Bot e Reclame Aqui PS, o volume de Canais Especiais ficou em 136 atendimentos em agosto, 16,0% abaixo de julho (162).' },
+            { icon: 'activity', color: 'blue', title: 'TAXA CONTROLADA', text: 'A relação entre atendimentos e base de ativos ficou em 0,08%, mantendo baixa pressão relativa sobre a operação.' },
+            { icon: 'users', color: 'purple', title: 'PUCRS CONCENTRA A DEMANDA', text: 'A PUCRS Online respondeu por 57,4% dos 136 atendimentos considerados, seguida por FAAP Online com 21,3%.' },
+            { icon: 'message-circle', color: 'red', title: 'BASE COM CRITÉRIO AJUSTADO', text: 'O total gerencial considera os atendimentos por IE e exclui Chat Bot e Reclame Aqui PS, que permanecem apresentados separadamente na distribuição por segmento.' }
         ];
         const analysisDiv = document.getElementById('executiveAnalysis');
         analysis.forEach(item => {
